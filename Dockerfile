@@ -1,5 +1,12 @@
-ARG DOCKER_TAG=latest
-FROM circleci/ruby:${DOCKER_TAG}
+FROM apiology/circleci:latest
 MAINTAINER apiology
 
-RUN sudo apt-get install -y libicu-dev cmake
+COPY Makefile fix.sh requirements_dev.txt Gemfile Gemfile.lock /tmp/
+RUN cd /tmp && \
+    ./fix.sh && \
+    rm -fr /home/circleci/.pyenv/versions/*/lib/python*/test && \
+    strip /home/circleci/.pyenv/versions/*/lib/python*/lib-dynload/*.so && \
+    strip /home/circleci/.pyenv/versions/*/lib/python*/config-*/*.a && \
+    ( find /home/circleci/.pyenv/versions -name __pycache__ | xargs rm -fr ) && \
+    strip /home/circleci/.pyenv/versions/*/lib/*.a && \
+    rm -fr /home/circleci/.rbenv/versions/*/share/*
