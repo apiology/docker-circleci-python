@@ -9,5 +9,6 @@ This is pretty uninteresting, just a CircleCI build image I use for some project
 ```sh
 docker pull apiology/circleci-python:latest
 ```
-To build locally, run `make`.  You can see automatic builds at
+
+To build locally, run `make`.  You can see images at
 [Docker Hub](https://hub.docker.com/repository/docker/apiology/circleci-python)
