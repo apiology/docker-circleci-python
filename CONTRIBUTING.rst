@@ -41,7 +41,7 @@ Write Documentation
 ~~~~~~~~~~~~~~~~~~~
 
 Docker CircleCI Python image could always use more documentation, whether as part of
-the official docs, in docstrings, or even on the web in blog posts, articles,
+the official Docker CircleCI Python image docs, in docstrings, or even on the web in blog posts, articles,
 and such.
 
 Submit Feedback
