@@ -1,4 +1,5 @@
 {
+    "_output_dir": "/Users/broz/src/docker-circleci-python/.git/cookiecutter",
     "_template": "https://github.com/apiology/cookiecutter-docker-image",
     "email": "vince@broz.cc",
     "full_docker_image_name": "apiology/circleci-python",
