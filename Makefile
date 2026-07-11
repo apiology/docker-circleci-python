@@ -1,4 +1,4 @@
-.PHONY: clean test help typecheck quality
+.PHONY: clean test help typecheck quality update_from_cookiecutter post_cookiecutter_sync
 .DEFAULT_GOAL := default
 
 define PRINT_HELP_PYSCRIPT
@@ -49,7 +49,7 @@ test: build ## run tests quickly
 citest: test ## Run unit tests from CircleCI
 
 overcommit: ## run precommit quality checks
-	bundle exec overcommit --run
+	bin/overcommit --run
 
 quality: overcommit ## run precommit quality checks
 
@@ -74,4 +74,3 @@ update_from_cookiecutter: ## Bring in changes from template project used to crea
 
 post_cookiecutter_sync: ## Ecosystem-specific steps after template sync (empty by default)
 	@:
-
