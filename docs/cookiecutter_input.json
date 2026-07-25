@@ -1,6 +1,6 @@
 {
     "_checkout": "main",
-    "_output_dir": "/Users/broz/.cursor/worktrees/docker-circleci-python/cascade-docker-circleci-python-1783776963197/.git/cookiecutter",
+    "_output_dir": "/Users/broz/.claude/worktrees/docker-circleci-python/cascade-docker-circleci-python-1784999682122/.git/cookiecutter",
     "_repo_dir": "/Users/broz/.cookiecutters/cookiecutter-docker-image",
     "_template": "https://github.com/apiology/cookiecutter-docker-image",
     "email": "vince@broz.cc",
